@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Hogwarts_App"
+             x:Class="Hogwarts_App.MainPage"
+             BackgroundColor="Black">
+
+    <StackLayout >
+        <StackLayout Orientation="Horizontal">
+            <Image Source="logo.png"                   
+                   HorizontalOptions="Start"
+                   VerticalOptions="Start"/>
+            <Label Text="Hogwarts Running Club"
+                   TextColor="Orange"
+                   FontSize="Large" 
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   />
+        </StackLayout>
+        <StackLayout>
+            <Entry
+                Text="Enter Username"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Orange"/>
+            <Entry
+                Text="Enter Password"
+                VerticalOptions="Center"
+                HorizontalOptions="CenterAndExpand"
+                TextColor="Orange"/>
+            <Button
+                
+                Text="Sign in"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="Button1_Clicked"
+                BackgroundColor="Orange"
+                
+            />
+            <Button
+                Text="Register"
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                Clicked="Button2_Clicked"
+                BackgroundColor="Orange"
+                
+                />
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>

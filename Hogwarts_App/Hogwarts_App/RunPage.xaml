@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hogwarts_App.RunPage">
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="My Run" BackgroundColor="Black">
+        <StackLayout Orientation="Vertical">
+            <Button Text="RUN" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Run"/>
+            <Button Text="STOP" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="Stop"/>
+            <Label Text="" x:Name="lblNumbers" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Plans" BackgroundColor="Black">
+        <Label Text="Plans"
+               TextColor="Orange"/>
+        <Label Text="Events"
+               TextColor="Orange"/>
+    </ContentPage>
+    <ContentPage Title="Warm ups" BackgroundColor="Black">
+        <StackLayout>
+            <Button Text="Long run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
+            <Button Text="Short run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
+            <Button Text="Hiking" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="My Profile" BackgroundColor="Black">
+        <StackLayout>
+            <Label Text="Language Change"
+                   TextColor="Orange"/>
+            <Label Text="Measurments"/>
+            <Label Text="Previous runs"
+                   TextColor="Orange"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
