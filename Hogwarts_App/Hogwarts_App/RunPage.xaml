@@ -7,6 +7,7 @@
         <StackLayout Orientation="Vertical">
             <Button Text="RUN" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Run"/>
             <Button Text="STOP" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="Stop"/>
+            <Button Text="RESET" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Reset"/>
             <Label Text="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Orange" x:Name="number_label"/>
         </StackLayout>
     </ContentPage>

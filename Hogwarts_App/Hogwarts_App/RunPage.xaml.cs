@@ -62,6 +62,15 @@ namespace Hogwarts_App
             timer.Stop();
             
         }
+
+        private void Reset (object sender, EventArgs e)
+        {
+            min = 0;
+            seconds = 0;
+            miliseconds = 0;
+            Device.BeginInvokeOnMainThread(() => { lblForTheTime.Text = min.ToString() + ":" + seconds.ToString() + ":" + miliseconds.ToString(); });
+
+        }
     }
 }
 
