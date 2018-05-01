@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hogwarts_App.Slovenski"
+            BackgroundColor="Black">
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="Tek" >
+        <StackLayout Orientation="Vertical">
+            <Button Text="TEČI" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Run"/>
+            <Button Text="STOP" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="Stop"/>
+            <Label Text="" x:Name="lblNumbers" />
+            <!--<meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR_API_KEY"/>-->
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Načrti" >
+        <StackLayout>
+            <Label Text="Načrti" TextColor="DarkOrange"/>
+            <Label Text="Dogodki" TextColor="DarkOrange"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Moj profil">
+        <StackLayout>
+            <Label Text="Izberi svojo hišo" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="Gryfondom" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Gryffindor"/>
+            <Button Text="Spolzgad" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Slytherin"/>
+            <Button Text="Pihpuf" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Hufflepuff"/>
+            <Button Text="Drznvraan" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Ravenclaw"/>
+            <Label Text="Spremeni jezik:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="English" BackgroundColor="DarkOrange" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Language_Change"/>
+            <Label Text="Mere:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="Prejšni teki:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Ogrevanje">
+        <StackLayout>
+            <Button Text="Dolgi tek" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+            <Button Text="Kratek tek" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+            <Button Text="Pohod" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

@@ -13,14 +13,14 @@ using Xamarin.Forms.PlatformConfiguration;
 namespace Hogwarts_App
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RunPage : TabbedPage
+    public partial class Slovenski : TabbedPage
     {
         private Timer timer = new Timer();
         int time;
 
 
 
-        public RunPage()
+        public Slovenski()
         {
             InitializeComponent();
             timer = new Timer();
@@ -34,7 +34,7 @@ namespace Hogwarts_App
         public void Timer_count(object sender, EventArgs e)
         {
             time++;
-            lblNumbers.Text = time.ToString();
+            //lblNumbers.Text = time.ToString();
         }
         private void Stop(object sender, EventArgs e)
         {
@@ -42,14 +42,14 @@ namespace Hogwarts_App
         }
         private void Gryffindor(object sender, EventArgs e)
         {
-                if (this.BackgroundColor == Color.Black)
-                {
-                    this.BackgroundColor = Color.FromHex("7F0909");
-                }
-                else
-                {
-                    this.BackgroundColor = Color.Black;;
-                }
+            if (this.BackgroundColor == Color.Black)
+            {
+                this.BackgroundColor = Color.FromHex("7F0909");
+            }
+            else
+            {
+                this.BackgroundColor = Color.Black; ;
+            }
         }
 
         private void Slytherin(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace Hogwarts_App
         {
             if (this.BackgroundColor == Color.Black)
             {
-                this.BackgroundColor = Color.FromHex("000A90"); 
+                this.BackgroundColor = Color.FromHex("000A90");
             }
             else
             {
@@ -88,12 +88,8 @@ namespace Hogwarts_App
         }
         private void Language_Change(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Slovenski());
+            Navigation.PushModalAsync(new RunPage());
         }
 
     }
 }
-
-
-
-

@@ -1,35 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Hogwarts_App.RunPage">
+             x:Class="Hogwarts_App.RunPage"
+            BackgroundColor="Black">
     <!--Pages can be added as references or inline-->
-    <ContentPage Title="My Run" BackgroundColor="Black">
+    <ContentPage Title="My Run" >
         <StackLayout Orientation="Vertical">
-            <Button Text="RUN" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Run"/>
-            <Button Text="STOP" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="Stop"/>
+            <Button Text="RUN" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Run"/>
+            <Button Text="STOP" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="Stop"/>
             <Label Text="" x:Name="lblNumbers" />
+            <!--<meta-data android:name="com.google.android.geo.API_KEY" android:value="YOUR_API_KEY"/>-->
         </StackLayout>
     </ContentPage>
-    <ContentPage Title="Plans" BackgroundColor="Black">
-        <Label Text="Plans"
-               TextColor="Orange"/>
-        <Label Text="Events"
-               TextColor="Orange"/>
-    </ContentPage>
-    <ContentPage Title="Warm ups" BackgroundColor="Black">
+    <ContentPage Title="Plans" >
         <StackLayout>
-            <Button Text="Long run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
-            <Button Text="Short run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
-            <Button Text="Hiking" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
+            <Label Text="Plans" TextColor="DarkOrange"/>
+            <Label Text="Events" TextColor="DarkOrange"/>
+        </StackLayout>    
+    </ContentPage>
+    <ContentPage Title="My profile">
+        <StackLayout>
+            <Label Text="Choose your house" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="Gryffindor" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Gryffindor"/>
+            <Button Text="Slytherin" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Slytherin"/>
+            <Button Text="Hufflepuff" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Hufflepuff"/>
+            <Button Text="Ravenclaw" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Ravenclaw"/>
+            <Label Text="Language Change:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="Slovenski" BackgroundColor="DarkOrange" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Language_Change"/>
+            <Label Text="Measurments:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="Previous runs:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
         </StackLayout>
     </ContentPage>
-    <ContentPage Title="My Profile" BackgroundColor="Black">
+    <ContentPage Title="Warmups">
         <StackLayout>
-            <Label Text="Language Change"
-                   TextColor="Orange"/>
-            <Label Text="Measurments"/>
-            <Label Text="Previous runs"
-                   TextColor="Orange"/>
+            <Button Text="Long run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+            <Button Text="Short run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+            <Button Text="Hiking" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
         </StackLayout>
     </ContentPage>
 </TabbedPage>

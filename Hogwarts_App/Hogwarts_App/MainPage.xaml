@@ -11,7 +11,7 @@
                    HorizontalOptions="Start"
                    VerticalOptions="Start"/>
             <Label Text="Hogwarts Running Club"
-                   TextColor="Orange"
+                   TextColor="DarkOrange"
                    FontSize="Large" 
                    VerticalOptions="Center"
                    HorizontalOptions="Center"
@@ -22,19 +22,19 @@
                 Text="Enter Username"
                 VerticalOptions="Center"
                 HorizontalOptions="CenterAndExpand"
-                TextColor="Orange"/>
+                TextColor="DarkOrange"/>
             <Entry
                 Text="Enter Password"
                 VerticalOptions="Center"
                 HorizontalOptions="CenterAndExpand"
-                TextColor="Orange"/>
+                TextColor="DarkOrange"/>
             <Button
                 
                 Text="Sign in"
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Clicked="Button1_Clicked"
-                BackgroundColor="Orange"
+                BackgroundColor="DarkOrange"
                 
             />
             <Button
@@ -42,7 +42,7 @@
                 VerticalOptions="Center"
                 HorizontalOptions="Center"
                 Clicked="Button2_Clicked"
-                BackgroundColor="Orange"
+                BackgroundColor="DarkOrange"
                 
                 />
         </StackLayout>
