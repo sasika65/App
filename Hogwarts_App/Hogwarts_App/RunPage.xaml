@@ -13,10 +13,15 @@
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Plans" >
+        <StackLayout Orientation="Vertical">
         <Label Text="Plans"
                TextColor="DarkOrange"/>
         <Label Text="Events"
                TextColor="DarkOrange"/>
+            <Image Source="event1.png"                   
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
+        </StackLayout>
     </ContentPage>
     <ContentPage Title="Warm ups">
         <StackLayout>

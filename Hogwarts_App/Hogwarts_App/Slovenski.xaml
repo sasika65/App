@@ -18,6 +18,9 @@
                TextColor="DarkOrange"/>
         <Label Text="Dogodki"
                TextColor="DarkOrange"/>
+            <Image Source="event1.png"                   
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"/>
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Ogrevanje">
@@ -27,14 +30,14 @@
             <Button Text="Pohod" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
         </StackLayout>
     </ContentPage>
-    <ContentPage Title="My Profile">
+    <ContentPage Title="Moj profil">
         <StackLayout Orientation="Vertical">
-            <Label Text="Choose your house" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="Izbreti svojo hišo" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Button Text="Gryfondom" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Gryffindor"/>
             <Button Text="Spolzgad" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Slytherin"/>
             <Button Text="Pihpuf" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Hufflepuff"/>
             <Button Text="Drznvraan" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Ravenclaw"/>
-            <Label Text="Language Change:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="Izberi jezik:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
             <Button Text="English" BackgroundColor="DarkOrange"  HorizontalOptions="Center" VerticalOptions="Center" Clicked="Language_Change"/>
             <Button Text="Slovenščina" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Language_Change1"/>
             <Label Text="Mere:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
