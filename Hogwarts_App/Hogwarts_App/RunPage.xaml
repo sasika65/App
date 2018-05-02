@@ -5,32 +5,37 @@
     <!--Pages can be added as references or inline-->
     <ContentPage Title="My Run" BackgroundColor="Black">
         <StackLayout Orientation="Vertical">
-            <Button Text="RUN" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Run"/>
-            <Button Text="STOP" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="Stop"/>
-            <Button Text="RESET" BackgroundColor="Orange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Reset"/>
+            <Button Text="RUN" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Run"/>
+            <Button Text="STOP" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="Stop"/>
+            <Button Text="RESET" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Reset"/>
             <Label Text="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Orange" x:Name="number_label"/>
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Plans" BackgroundColor="Black">
         <Label Text="Plans"
-               TextColor="Orange"/>
+               TextColor="DarkOrange"/>
         <Label Text="Events"
-               TextColor="Orange"/>
+               TextColor="DarkOrange"/>
     </ContentPage>
     <ContentPage Title="Warm ups" BackgroundColor="Black">
         <StackLayout>
-            <Button Text="Long run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
-            <Button Text="Short run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
-            <Button Text="Hiking" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="Orange"/>
+            <Button Text="Long run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+            <Button Text="Short run" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+            <Button Text="Hiking" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
         </StackLayout>
     </ContentPage>
     <ContentPage Title="My Profile" BackgroundColor="Black">
         <StackLayout>
-            <Label Text="Language Change"
-                   TextColor="Orange"/>
-            <Label Text="Measurments"/>
-            <Label Text="Previous runs"
-                   TextColor="Orange"/>
+            <Label Text="Choose your house" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="Gryffindor" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Gryffindor"/>
+            <Button Text="Slytherin" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Slytherin"/>
+            <Button Text="Hufflepuff" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Hufflepuff"/>
+            <Button Text="Ravenclaw" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Ravenclaw"/>
+            <Label Text="Language Change:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="Slovenski" BackgroundColor="DarkOrange" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Language_Change"/>
+            <Label Text="Measurments:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="Previous runs:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
         </StackLayout>
     </ContentPage>
 </TabbedPage>
+
