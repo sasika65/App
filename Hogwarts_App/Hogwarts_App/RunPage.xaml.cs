@@ -71,6 +71,56 @@ namespace Hogwarts_App
             Device.BeginInvokeOnMainThread(() => { lblForTheTime.Text = min.ToString() + ":" + seconds.ToString() + ":" + miliseconds.ToString(); });
 
         }
+        private void Gryffindor(object sender, EventArgs e)
+        {
+            if (this.BackgroundColor == Color.Black)
+            {
+                this.BackgroundColor = Color.FromHex("7F0909");
+            }
+            else
+            {
+                this.BackgroundColor = Color.Black; ;
+            }
+        }
+
+        private void Slytherin(object sender, EventArgs e)
+        {
+            if (this.BackgroundColor == Color.Black)
+            {
+                this.BackgroundColor = Color.FromHex("0D6217");
+            }
+            else
+            {
+                this.BackgroundColor = Color.Black; ;
+            }
+        }
+        private void Hufflepuff(object sender, EventArgs e)
+        {
+            if (this.BackgroundColor == Color.Black)
+            {
+                this.BackgroundColor = Color.FromHex("FFC500");
+            }
+            else
+            {
+                this.BackgroundColor = Color.Black; ;
+            }
+        }
+
+        private void Ravenclaw(object sender, EventArgs e)
+        {
+            if (this.BackgroundColor == Color.Black)
+            {
+                this.BackgroundColor = Color.FromHex("000A90");
+            }
+            else
+            {
+                this.BackgroundColor = Color.Black; ;
+            }
+        }
+        private void Language_Change(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new Slovenski());
+        }
     }
 }
 
