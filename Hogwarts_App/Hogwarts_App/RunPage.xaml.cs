@@ -73,51 +73,55 @@ namespace Hogwarts_App
         }
         private void Gryffindor(object sender, EventArgs e)
         {
-            if (this.BackgroundColor == Color.Black)
+            if (this.BackgroundColor == Color.FromHex("7F0909"))
             {
-                this.BackgroundColor = Color.FromHex("7F0909");
+                this.BackgroundColor = Color.Black;
             }
             else
             {
-                this.BackgroundColor = Color.Black; ;
+                this.BackgroundColor = Color.FromHex("7F0909");
             }
         }
 
         private void Slytherin(object sender, EventArgs e)
         {
-            if (this.BackgroundColor == Color.Black)
+            if (this.BackgroundColor == Color.FromHex("0D6217"))
             {
-                this.BackgroundColor = Color.FromHex("0D6217");
+                this.BackgroundColor = Color.Black;
             }
             else
             {
-                this.BackgroundColor = Color.Black; ;
+                this.BackgroundColor = Color.FromHex("0D6217");
             }
         }
         private void Hufflepuff(object sender, EventArgs e)
         {
-            if (this.BackgroundColor == Color.Black)
+            if (this.BackgroundColor == Color.FromHex("FFC500"))
             {
-                this.BackgroundColor = Color.FromHex("FFC500");
+                this.BackgroundColor = Color.Black;
             }
             else
             {
-                this.BackgroundColor = Color.Black; ;
+                this.BackgroundColor = Color.FromHex("FFC500");
             }
         }
 
         private void Ravenclaw(object sender, EventArgs e)
         {
-            if (this.BackgroundColor == Color.Black)
+            if (this.BackgroundColor == Color.FromHex("000A90"))
             {
-                this.BackgroundColor = Color.FromHex("000A90");
+                this.BackgroundColor = Color.Black;
             }
             else
             {
-                this.BackgroundColor = Color.Black; ;
+                this.BackgroundColor = Color.FromHex("000A90");
             }
         }
         private void Language_Change(object sender, EventArgs e)
+        {
+            
+        }
+        private void Language_Change1(object sender, EventArgs e)
         {
             Navigation.PushModalAsync(new Slovenski());
         }
