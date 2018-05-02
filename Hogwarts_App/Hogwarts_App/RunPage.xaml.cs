@@ -1,17 +1,17 @@
-﻿using Android.Content;
+﻿//using Android.Content;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
-using Org.W3c.Dom;
+//using Org.W3c.Dom;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using Android.App;
-using Android.Widget;
+//using Android.App;
+//using Android.Widget;
 using System.Threading;
-using Java.Lang;
+//using Java.Lang;
 
 namespace Hogwarts_App
 {

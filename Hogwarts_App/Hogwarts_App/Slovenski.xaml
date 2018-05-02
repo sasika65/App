@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hogwarts_App.Slovenski"
+            BackgroundColor="Black">
+    <!--Pages can be added as references or inline-->
+    <ContentPage Title="Moj tek">
+        <StackLayout Orientation="Vertical">
+            <Button Text="Teči" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Run"/>
+            <Button Text="Stoj" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"  Clicked="Stop"/>
+            <Button Text="Ponastavi" BackgroundColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Reset"/>
+            <Label Text="0" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Orange" x:Name="number_label"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Načrti">
+        <StackLayout Orientation="Vertical">
+        <Label Text="Načrti"
+               TextColor="DarkOrange"/>
+        <Label Text="Dogodki"
+               TextColor="DarkOrange"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Ogrevanje">
+        <StackLayout Orientation="Vertical">
+            <Button Text="Dolgi tek" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+            <Button Text="Kratek tek" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+            <Button Text="Pohod" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange"/>
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="My Profile">
+        <StackLayout Orientation="Vertical">
+            <Label Text="Choose your house" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="Gryffindor" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Gryffindor"/>
+            <Button Text="Slytherin" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Slytherin"/>
+            <Button Text="Hufflepuff" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Hufflepuff"/>
+            <Button Text="Ravenclaw" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="DarkOrange" Clicked="Ravenclaw"/>
+            <Label Text="Language Change:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Button Text="English" BackgroundColor="DarkOrange" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Language_Change"/>
+            <Button Text="Slovenščina" BackgroundColor="DarkOrange" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center" Clicked="Language_Change1"/>
+            <Label Text="Measurments:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+            <Label Text="Previous runs:" TextColor="DarkOrange" HorizontalOptions="Center" VerticalOptions="Center"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
